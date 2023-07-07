@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test CORS</title>
+</head>
+<body>
+    <script>
+        fetch("http://localhost:8000/testapi/records")
+        .then(function(res){
+            return res.json();
+        })
+        .then(function(json){
+            console.log(json);
+        }) 
+
+        /*fetch("http://localhost:8000/testapi/people")
+        .then(function(res){
+            return res.json();
+        })
+        .then(function(json){
+            console.log(json)
+        })*/
+    </script>
+</body>
+</html>
